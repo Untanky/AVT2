@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>AVT Übungsaufgabe 02</title>
+</head>
+<body>
+    <h1>Simple Audio App</h1>
+    <h5>by Lukas Grimm (s0563265)</h5>
+
+    <label for="file-input">Audio File:</label>
+    <input type="file" id="file-input"/><br>
+    <input type="button" id="play-button" value="Play"/>
+    <input type="button" id="stop-button" value="Stop"/><br>
+    <label for="volume-slider">Volume: </label>
+    <input 
+        type="range" 
+        id="volume-slider" 
+        min="0" max="1" step="0.01"
+        orient=""/><br>
+    <label for="low-slider">Low: </label>
+    <input type="range" id="low-slider" min="-50" max="15" step="0.04"/><br>
+    <label for="mid-slider">Mid: </label>
+    <input type="range" id="mid-slider" min="-50" max="15" step="0.04"/><br>
+    <label for="high-slider">High: </label>
+    <input type="range" id="high-slider" min="-50" max="15" step="0.04"/><br>
+    <canvas width="400" height="400" id="canvas"></canvas><br>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
